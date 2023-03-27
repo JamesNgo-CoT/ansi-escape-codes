@@ -21,6 +21,10 @@ export const BRIGHT_MAGENTA = '\u001b[35;1m';
 export const BRIGHT_CYAN = '\u001b[36;1m';
 export const BRIGHT_WHITE = '\u001b[37;1m';
 
+export function colour(id) {
+	return `\u001b[38;5;${id}m`;
+}
+
 export const BG_BLACK = '\u001b[40m';
 export const BG_RED = '\u001b[41m';
 export const BG_GREEN = '\u001b[42m';
@@ -38,6 +42,10 @@ export const BG_BRIGHT_BLUE = '\u001b[44;1m';
 export const BG_BRIGHT_MAGENTA = '\u001b[45;1m';
 export const BG_BRIGHT_CYAN = '\u001b[46;1m';
 export const BG_BRIGHT_WHITE = '\u001b[47;1m';
+
+export function bgColour(id) {
+	return `\u001b[48;5;${id}m`;
+}
 
 export const BOLD = '\u001b[1m';
 export const UNDERLINE = '\u001b[4m';
